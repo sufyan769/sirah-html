@@ -1,12 +1,46 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#143e36"><meta name="description" content="كتاب السيرة النبوية: قراءة مريحة، وفهرس للموضوعات، وبحث في النصوص والتراجم."><title>السيرة النبوية | كتاب للقراءة</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#143e36">
+<meta name="description" content="على خُطى السيرة: قراءة وتأمل في سيرة النبي محمد ﷺ، مع فهرس للموضوعات وبحث في النصوص والتراجم.">
+<title>السيرة النبوية | كتاب للقراءة</title>
+<link rel="stylesheet" href="style.css?v=20261020-responsive">
+<script src="app.js?v=20261020-responsive" defer></script>
+</head>
 <body>
-<header class="topbar"><a class="brand" href="#"><span class="brandmark">س</span><span>السيرة النبوية<small>كتاب للقراءة والتأمل</small></span></a><div class="header-actions"><button id="toc-toggle" aria-controls="sidebar" aria-expanded="false">الفهرس</button><button id="theme" aria-label="تبديل الوضع الليلي">الوضع الليلي</button></div></header>
-<div class="layout"><aside id="sidebar"><div class="aside-heading"><span class="eyebrow">دليل الكتاب</span><h2>فهرس الموضوعات</h2></div><label for="search">ابحث في العناوين والنصوص</label><div class="searchbox"><input type="search" id="search" placeholder="اكتب كلمة للبحث…" autocomplete="off"><span aria-hidden="true">⌕</span></div><p id="results" role="status">جارٍ تحميل الكتاب…</p><nav id="toc" aria-label="فهرس الكتاب"></nav><p class="source">من ملف الكتاب الذي أعدّه صاحب الموقع.<br>عرض للنص الأصلي، لا تحقيق للروايات.</p></aside>
-<main id="main"><section class="hero"><div class="hero-copy"><p class="eyebrow">بسم الله الرحمن الرحيم</p><h1>على خُطى السيرة</h1><p>صفحات في سيرة النبي محمد ﷺ،<br>من البدايات إلى أحداث الرسالة.</p><div class="hero-meta"><span id="page-count">— موضوعًا</span><i></i><span>قراءة عربية من اليمين إلى اليسار</span></div></div><div class="hero-art" aria-hidden="true"><div class="arch"><span>محمد</span><small>ﷺ</small></div></div></section>
+<a class="skip-link" href="#article">انتقل إلى القراءة</a>
+<header class="topbar">
+<a class="brand" href="#" aria-label="السيرة النبوية، العودة إلى أعلى الصفحة"><span class="brandmark" aria-hidden="true">س</span><span>السيرة النبوية<small>كتاب للقراءة والتأمل</small></span></a>
+<div class="header-actions"><button id="toc-toggle" aria-controls="sidebar" aria-expanded="false">الفهرس والبحث</button><button id="theme" aria-label="تبديل الوضع الليلي">الوضع الليلي</button></div>
+</header>
+<button id="sidebar-backdrop" type="button" aria-label="إغلاق الفهرس" tabindex="-1" hidden></button>
+<div class="layout">
+<aside id="sidebar" aria-label="الفهرس والبحث">
+<div class="aside-heading"><div><span class="eyebrow">دليل الكتاب</span><h2>فهرس الموضوعات</h2></div><button id="toc-close" type="button" aria-label="إغلاق الفهرس">×</button></div>
+<label for="search">ابحث في العناوين والنصوص</label>
+<div class="searchbox"><input type="search" id="search" placeholder="اكتب كلمة للبحث…" autocomplete="off"><span aria-hidden="true">⌕</span></div>
+<p id="results" role="status">جارٍ تحميل الكتاب…</p>
+<nav id="toc" aria-label="فهرس الكتاب"></nav>
+<p class="source">من ملف الكتاب الذي أعدّه صاحب الموقع.<br>عرض للنص الأصلي، لا تحقيق للروايات.</p>
+</aside>
+<main id="main">
+<section class="hero" aria-labelledby="site-title"><div class="hero-copy"><p class="eyebrow">بسم الله الرحمن الرحيم</p><h1 id="site-title">على خُطى السيرة</h1><p>صفحات في سيرة النبي محمد ﷺ،<br>من البدايات إلى أحداث الرسالة.</p><div class="hero-meta"><span id="page-count">— موضوعًا</span><i aria-hidden="true"></i><span>قراءة عربية من اليمين إلى اليسار</span></div></div><div class="hero-art" aria-hidden="true"><div class="arch"><span>محمد</span><small>ﷺ</small></div></div></section>
+<section class="introduction" aria-labelledby="intro-title">
+<p class="eyebrow">بين يدي الكتاب</p>
+<h2 id="intro-title">السيرة… معرفةٌ تُضيء الحياة</h2>
+<p>الحمد لله، والصلاة والسلام على رسول الله محمد، وعلى آله وصحبه وسلم. إن قراءة السيرة النبوية ليست وقوفًا عند أحداثٍ مضت، بل اقترابٌ من حياة النبي ﷺ، وتأملٌ في رحمته وحكمته وصبره، وفيما تحمله مواقفه من معانٍ تهدي القلب وتعين على حسن العمل.</p>
+<p>يجمع هذا الموقع صفحاتٍ من السيرة في عرضٍ عربيٍّ يسهل تصفحه؛ لتنتقل بين موضوعاتها، وتتأمل أحداثها، وتعود إلى ما تحتاج إليه من نصوصٍ وتراجم. نرجو أن تكون هذه القراءة بابًا إلى مزيدٍ من المعرفة والمحبة والاقتداء، مع العناية بالتثبت من الروايات والرجوع إلى أهل العلم ومصادر التحقيق عند الحاجة.</p>
+<div class="intro-actions"><button id="start-reading" type="button" disabled>انتقل إلى القراءة</button><button id="browse-book" type="button">تصفّح الفهرس</button></div>
+</section>
 <div class="reading-tools"><div class="breadcrumb" id="section">الكتاب</div><div class="fonttools"><span>حجم النص</span><button id="smaller" aria-label="تصغير الخط">−</button><button id="larger" aria-label="تكبير الخط">+</button></div></div>
-<article id="article" tabindex="-1"><p class="eyebrow" id="position">السيرة النبوية</p><h2 id="title">جارٍ تجهيز صفحات الكتاب…</h2><div id="content"><p>ستظهر هنا صفحات كتابك فور اكتمال التحميل.</p></div></article>
-<footer class="reader-footer"><button id="prev">→ السابق</button><span id="progress"></span><button id="next">التالي ←</button></footer><p class="reading-note">يُحفظ موضع القراءة على هذا الجهاز تلقائيًا.</p></main></div>
-<dialog id="bio"><div class="dialog-heading"><h2 id="bio-title"></h2><button id="close-bio" aria-label="إغلاق الترجمة">×</button></div><div id="bio-content"></div></dialog><div id="toast" role="status"></div>
-</body></html>
+<article id="article" tabindex="-1" aria-busy="true"><p class="eyebrow" id="position">السيرة النبوية</p><h2 id="title">جارٍ تجهيز صفحات الكتاب…</h2><div id="content"><p>ستظهر هنا صفحات كتابك فور اكتمال التحميل.</p></div></article>
+<footer class="reader-footer"><button id="prev" disabled>→ السابق</button><span id="progress" aria-live="polite"></span><button id="next" disabled>التالي ←</button></footer>
+<p class="reading-note">يُحفظ موضع القراءة على هذا الجهاز تلقائيًا.</p>
+</main>
+</div>
+<dialog id="bio" aria-labelledby="bio-title"><div class="dialog-heading"><h2 id="bio-title"></h2><button id="close-bio" aria-label="إغلاق الترجمة">×</button></div><div id="bio-content"></div></dialog>
+<div id="toast" role="status"></div>
+</body>
+</html>
