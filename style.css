@@ -243,3 +243,13 @@ dialog::backdrop { background: #142b2599; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
 @media (max-width: 1100px) { body.toc-open { overflow: hidden; } }
+
+/* Isolate Quran citations from surrounding RTL prose and keep each reference together. */
+.ayah-ref {
+  display: inline-block;
+  direction: rtl;
+  unicode-bidi: isolate;
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: .85em;
+}
